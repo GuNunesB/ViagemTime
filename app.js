@@ -56,7 +56,14 @@ async function ligar() {
         }
         suporte = true
     } else {
+        if (track) {
+            try {
+                await track.applyConstraints({ advanced: [{ torch: false }] })
+            } catch (error) {
+                console.error(`Erro ao inicializar a lanterna: ${error}`)
+            }
+        }
         suporte = false
     }
-
+    
 }
