@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: url(img/fundo.jpg) no-repeat;
+    background-position: 0% 0%;
+    background-size: 130vw auto;
+}
+
+form {
+    background: #ffffffc2;
+    max-width: 320px;
+    height: auto;
+    padding: 40px 20px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 10vh;
+}
+
+p {
+    text-align: center;
+}
+
+.info {
+    border-radius: 5px;
+    padding: 6px;
+    width: 54vw;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    border: 0.5px solid #000;
+}
+
+.resultado {
+    padding: 30px 10px;
+    width: 54vw;
+    border: none;
+    background-color: #070809;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: #ffffff
+}
+
+legend {
+    color: #000000;
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+fieldset {
+    border: 1px solid #c00000;
+    padding: 15px;
+    margin-bottom: 30px
+}
+
+.calc_butao {
+    background-color: #c00000;
+    color: #ffffff;
+    border: none;
+    margin-bottom: 10px;
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.calc_butao:hover {
+    background-color: #9c0000;
+}
+
+.limpar {
+    background-color: #070809;
+    color: #ffffff;
+    border: none;
+    margin-bottom: 10px;
+    width: 65px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    display: block;
+    position: relative;
+    left: -10px;
+    top: 20px;
+}
+
+.limpar:hover {
+    background-color: #000000;
+}
+
+.lanterna {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    display: block;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+.lanterna:hover {
+    background-color: #9c0000;
+}

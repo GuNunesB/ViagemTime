@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tempo de Viajem</title>
+</head>
+
+<body>
+    <button class="lanterna" id="lantarna">Lanterna</button>
+    <form onsubmit="calc_tempo(event)">
+        <fieldset class="caixa">
+            <legend>Calcule o tempo da sua viagem!</legend>
+            <p>
+                <input class="resultado" placeholder="Tempo estimado (h)" type="text" id="tempo" readonly>
+            </p>
+            <p>
+                <input class="info" type="number" step="any" name="velocidade" id="velocidade" placeholder="Velociade média (Km/h)" required>
+            </p>
+
+            <p>
+                <input class="info" type="number" step="any" name="distancia" id="distancia" placeholder="Distância (Km)" required>
+            </p>
+            <p>
+                <button class="calc_butao">Cálcular</button>
+            </p>
+            <p>
+                <button class="limpar" type="reset">Limpar</button>
+            </p>
+        </fieldset>
+    </form>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
