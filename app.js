@@ -46,12 +46,12 @@ async function inicializarLanterna() {
 }
 
 async function ligar() {
-    if (suporte = false) {
+    if (suporte === false) { 
         if (track) {
             try {
                 await track.applyConstraints({ advanced: [{ torch: true }] })
             } catch (error) {
-                console.error(`Erro ao inicializar a lanterna: ${error}`)
+                console.error(`Erro ao ligar a lanterna: ${error}`)
             }
         }
         suporte = true
@@ -60,10 +60,9 @@ async function ligar() {
             try {
                 await track.applyConstraints({ advanced: [{ torch: false }] })
             } catch (error) {
-                console.error(`Erro ao inicializar a lanterna: ${error}`)
+                console.error(`Erro ao desligar a lanterna: ${error}`)
             }
         }
         suporte = false
     }
-    
 }
