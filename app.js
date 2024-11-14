@@ -54,7 +54,7 @@ async function ligar() {
                 console.error(`Erro ao ligar a lanterna: ${error}`)
             }
         }
-        suporte = true
+        suporte === true
     } else {
         if (track) {
             try {
@@ -63,6 +63,6 @@ async function ligar() {
                 console.error(`Erro ao desligar a lanterna: ${error}`)
             }
         }
-        suporte = false
+        suporte === false
     }
 }
